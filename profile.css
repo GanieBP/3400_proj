@@ -1,0 +1,30 @@
+.profile{
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.inline{
+    display: inline-block;
+}
+
+.btn_post{
+    background-color: #008080;
+    font-family: sans-serif;
+    font-weight: bold;
+    height: 50px;
+    width: 100px;
+    border-radius: 20px;
+    color: white;
+}
+
+.btn_post:hover{
+    background-color: #02B3C8;
+    cursor: pointer;
+}
+
+input{
+    background-color: white;
+    border-style: none;
+    border-radius: 0px;
+}
