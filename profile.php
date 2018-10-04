@@ -44,16 +44,18 @@
                 </div>
         </nav>
 
-        <div class="container">
+        <div class="container-fluid">
             <div class="row">
-                <div class="col profile inline">
-                    <div style="width:300px; height: 300px; border:1px solid;">Image here</div>
-                    <?php
-                        session_start();
-                        if(isset($_SESSION['username']))
+                <div class="col profile  media">
+                    <div><img src="FRANK.jpg" style="width:200px;  border:1px solid; border-radius: 300px">
+                        <div class="media-body"><?php
+                            session_start();
+                            if(isset($_SESSION['username']))
 
-                        echo $_SESSION['username'];
-                    ?>
+                            echo $_SESSION['username'];
+                        ?>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="container">

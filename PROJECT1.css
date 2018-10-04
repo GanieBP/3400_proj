@@ -1,12 +1,12 @@
 body{
     margin: 0;
-    background: #F6F6FF;
+    background: #F0F0F0;
     font-family: sans-serif;
 }
 
 .nav-item  a{
     color: white;
-    font-family: sans-serif;
+    font-family: Arial, Times, sans-serif;
     font-size: 18px;
     font-weight: bold;
 }
@@ -22,6 +22,28 @@ body{
 
 .container-fluid{
     margin-top: 20px;
+    background-color: #E6E6E6;
+}
+
+hr{
+  margin: 0;
+}
+
+.media{
+  margin: 0;
+}
+
+.media-body{
+  margin-left: 1.5%;
+}
+
+.dposted{
+  font-size: 12px;
+
+}
+
+.poster{
+  font-weight: bold;
 }
 
 .brand{
@@ -76,6 +98,11 @@ h2{
 
 .login{
     text-align: center;
+}
+
+.elink{
+  font-family: Arial, helvetica, sans-serif;
+  font-size: 20px;
 }
 
 button{

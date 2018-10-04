@@ -26,7 +26,7 @@
                             <a class="nav-link" href="Project.php">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="Events.html">Events</a>
+                            <a class="nav-link" href="Events.php">Events</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">Members</a>
@@ -111,10 +111,11 @@
 
             <!-- CONTENT  -->
             <div class="container-fluid">
+
                  <div class="row" style="margin-left:5%">
                      <div class="col col-8 Main">
                         <div class="container-fluid">
-                         <h1>Main content here</h1>
+                         <h4><small>Recent Posts</small></h4>
                          <hr>
 
                          <!-- new content -->
@@ -128,7 +129,7 @@
                               while($row = mysqli_fetch_assoc($sql)){
                                 ?>
 
-                             <h2><?php echo $row['post']; ?></h2>
+                             <p><?php echo $row['post']; ?></p>
 
                               <?php }
 
@@ -136,38 +137,53 @@
                           </div>
 
                             <div class="container">
-                                <h2 >Warriors 2018</h2>
-                                <img class="d-block" src="Warriors.jpg" style="height: auto; width: 100%;">
-                                <p>An article (with the linguistic glossing abbreviation ART) is a word that is used with a noun (as a standalone word or a prefix or suffix) to specify grammatical definiteness of the noun, and in some languages extending to volume or numerical scope.</p>
+                                <div class="media">
+                                  <img class="nav_img" src="FRANK.jpg" style="width: 50px">
+                                    <div class="media-body">
+                                      <h6 class="poster">Name </h6>
+
+                                      <p class="dposted"><?php echo "Posted " . date("m/d/y"); ?></p>
+                                    </div>
+                                </div>
+                                <hr>
+                                  <img class="d-block" src="Warriors.jpg" style="height: auto; width: 100%;">
+                                    <p>An article (with the linguistic glossing abbreviation ART) is a word that is used with a noun (as a standalone word or a prefix or suffix) to specify grammatical definiteness of the noun, and in some languages extending to volume or numerical scope.</p>
                             </div>
                             <button type="button" class="Readmore ">Read More</button>
                         </div>
-                        <div class="container-fluid">
-                         <hr>
-                            <div class="container">
-                                <h2>Warriors 2018</h2>
-                                <img class="d-block" src="Warriors.jpg" style="height: auto; width: 100%;">
-                                <p>An article (with the linguistic glossing abbreviation ART) is a word that is used with a noun (as a standalone word or a prefix or suffix) to specify grammatical definiteness of the noun, and in some languages extending to volume or numerical scope.</p>
-
-                            </div>
-                        </div>
-                        <div class="container-fluid">
-                         <hr>
-                            <div class="container">
-                                <h2>Warriors 2018</h2>
-                                <img class="d-block" src="Warriors.jpg" style="height: auto; width: 100%;">
-                                <p>An article (with the linguistic glossing abbreviation ART) is a word that is used with a noun (as a standalone word or a prefix or suffix) to specify grammatical definiteness of the noun, and in some languages extending to volume or numerical scope.</p>
-                            </div>
-                        </div>
                      </div>
+
                      <div class="col col-4 Main">
                         <div class="container-fluid">
                          <h2>Upcoming Events</h2>
+                         <hr>
+                         <table>
+                           <tr>
+                            <td class="elink">
+                              <a href="#" class="nav-link">Link</a>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="elink">
+                              <a href="#" class="nav-link">Link</a>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="elink">
+                              <a href="#" class="nav-link">Link</a>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="elink">
+                              <a href="#" class="nav-link">Link</a>
+                            </td>
+                          </tr>
+                         </table>
+                         <hr>
                        </div>
                      </div>
-
-
                  </div>
+
             </div>
 </body>
 </html>

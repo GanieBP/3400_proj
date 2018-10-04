@@ -28,3 +28,7 @@ input{
     border-style: none;
     border-radius: 0px;
 }
+
+.container-fluid{
+    background-color: gray;
+}
